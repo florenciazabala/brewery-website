@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewery | Contacto</title>
+    <a href="index.html"><link rel="shortcut icon" href="resources/favicon/favicon.png" type="image/x-icon"></a>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="resources/images/exampleLogotype.png" alt="Logo"></a>
+            <ul>
+                <li><a href="about-us.html">Acerca de nosotros</a></li>
+                <li><a href="variety.html">Variedades</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="shop.html"><i class='bx bxs-beer' ></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank"><i class='bx bxl-whatsapp' ></i>Whatsapp</a>
+            <h5><i class='bx bx-current-location'></i> 126 Lamadrid 2486, Villa Ballester, Provincia de Buenos Aires</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9295.060811126423!2d-58.55756336379962!3d-34.5459521451748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba00f413f107%3A0x923cac407f719eb!2sWantaco%20Ballester!5e0!3m2!1ses-419!2sar!4v1647313689275!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section>
+            <form action="#" method="post">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" required>
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail" placeholder="juanperez@gmail.com" required>
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone" id="phone" placeholder="011 6823421">
+                <label for="isAdult">Soy mayor de edad</label>
+                <input type="checkbox" name="adult" value="isAdult" id="isAdult" checked required>
+                <label for="reason">Motivo</label>
+                <input type="text" name="reason" list="reasonsList" id="reason" required>
+                    <datalist id="reasonsList">
+                        <option>Franquicias</option>
+                        <option>Ventas</option>
+                        <option>Atención al cliente</option>
+                        <option>Reclamos</option>
+                    </datalist>
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="" cols="30" rows="10" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <a href="index.html"><img src="resources/images/exampleLogotype.png" alt="Logo"></a>
+        </section>
+        <section>
+            <ul>
+                <li><a href="about-us.html">Acerca de nosotros</a></li>
+                <li><a href="variety.html">Variedades</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="https://goo.gl/maps/3ChtQo4Y5G64iusZA" target="_blank"><i class='bx bx-current-location'></i> Av. Libertador 1234, CABA</a></li>
+            </ul>
+        </section>
+        <section>
+            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank"><i class='bx bxl-whatsapp' ></i>Whatsapp</a>
+            <form action="#" method="get">
+                <input type="email" name="mail" placeholder="juanperez@gmail.com">
+                <button type="submit">Subscribirse</button>
+            </form>
+        </section>
+    </footer>
+</body>
+</html>
