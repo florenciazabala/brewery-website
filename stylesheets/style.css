@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root{
+    --background-gray: #2F2F2F;
+    --background-darkgray: #202020;
+    --blue-gradient: #c271f3;
+    --blue-gradient-img: linear-gradient(160deg, #c271f3 0%, #34cada 100%);
+    --violet-gradient: #b65cb6;
+    --violet-gradient-img: linear-gradient(0deg, #b65cb6 0%, #7f248d 100%);
+    --purple-gradient: #D9AFD9;
+    --purple-gradient-img: linear-gradient(0deg, #D9AFD9 0%, #b422a5 100%);
+    --fucsia-gradient: #ed60a4;
+    --fucsia-gradient-img: linear-gradient(0deg, #ed60a4 0%, #b42268 100%); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+body{
+    background: var(--background-gray);
+    font-family:  'Roboto', sans-serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*NAVBAR*/
+header{
+    position: sticky;
+}
+
+nav.header__navbar{
+    background-color: var(--background-darkgray);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+nav.header__navbar .header__navbar-menu{
+    display: flex;
+    list-style: none;
+}
+
+nav.header__navbar .header__navbar-logo img{
+    height: 36px;
+    width: auto;
+}
+
+nav.header__navbar .header__navbar-menu li{
+    margin-left: 20px;
+}
+
+.variety-menu{
+    display: none;
+    list-style: none;
+}
+
+#variety:hover .variety-menu{
+    display: block;
+}
+
+/*FOOTER*/
+footer#footer__container{
+    display: flex;
+    padding: 40px 20px;
+    justify-content: space-between;
+    background-color: var(--background-darkgray);
+}
+
+footer#footer__container .footer__logo img{
+    height: 48px;
+    width: auto;
+}
+
+footer#footer__container .footer__menu ul{
+    list-style: none;
+}
+footer#footer__container .footer__menu ul li{
+    padding-bottom: 5px;
+}
+
+
+footer#footer__container .footer__social .footer__social-icons{
+    display: flex;
+    justify-content: space-between;
+}
+footer#footer__container .footer__social .footer__social-icons a i{
+    height: 60px;
+    width: auto;
+}
+
+/*PRODUCT DETAIL*/
+.beer__container{
+    display: flex;
+}
+
+article.beer__detail-container{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+article.beer__detail-container .beer__detail-circle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: calc(50% - 100px);
+    border-radius: 50%;
+    background: var(--blue-gradient);
+    background-image: var(--blue-gradient-img);
+    animation: 3s beer-detail ease-in-out 0.5s forwards;
+    z-index: 1;
+}
+
+@keyframes beer-detail {
+    0%{
+        transform: scaleX(1);
+        border-radius: 50%;
+    }
+    100%{
+        transform: scaleX(1.5) translateX(50px);
+        border-radius: 20px;
+    }
+}
+
+article.beer__detail-container img.beer__detail-img{
+    position: absolute;
+    height:300px;
+    width: auto;
+    top: calc(50% - 150px);
+    z-index: 3;
+    transition: all 1s ease-in-out;
+}
+
+article.beer__detail-container img.beer__detail-img:hover{
+    transform: scale(1.2);
+}
+
+article.beer__detail-container div.beer__detail-data{
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    color: white;
+    z-index: 2;
+    font-size: 0.8rem;
+
+    animation: 3s data ease-in-out 0.5s forwards;
+}
+
+@keyframes data {
+    0%{
+        opacity: 0;
+        transform: translate(-80%, -50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(20%,-50%);
+    }
+}
+
+.beer__detail-data img{
+    
+    height: 1rem;
+    width: auto;
+    margin-right: 5px;
+    float: left;
+}
+
+.beer__description-container{
+    width: 300px;
+    height: auto;
+    margin: auto;
+}
+
+.beer__description-container h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.beer__description-container p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+section.anotherBeers{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 20px;
+}
+
+section.anotherBeers div{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: auto 0;
+}
+
+section.anotherBeers div div.circle{
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: calc(50% - 75px);
+    margin: auto;
+    justify-self: center;
+}
+
+section.anotherBeers div img{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: calc(50% - 100px);
+
+    transition: all 1s ease-in-out;
+}
+
+section.anotherBeers div img:hover{
+    transform: scale(1.2);
+}
+
+/*section.anotherBeers div:nth-child(1) img{
+    animation: 3s another-beers ease-in-out 0.5s forwards;
+}
+section.anotherBeers div:nth-child(2) img{
+    animation: 3s another-beers ease-in-out 0.8s forwards;
+}
+section.anotherBeers div:nth-child(3) img{
+    animation: 3s another-beers ease-in-out 1s forwards;
+}
+
+@keyframes another-beers{
+    0%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}*/
+
+section.anotherBeers div:nth-child(1) div.circle{
+    background-color: var(--violet-gradient);
+    background-image: var(--violet-gradient-img);
+}
+section.anotherBeers div:nth-child(2) div.circle{
+    background-color: var(--purple-gradient);
+    background-image: var(--purple-gradient-img);
+}
+section.anotherBeers div:nth-child(3) div.circle{
+    background-color: var(--fucsia-gradient);
+    background-image: var(--fucsia-gradient-img);
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewery | Porter lager</title>
+    <link rel="shortcut icon" href="../resources/favicon/blomsterne-favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <nav class="header__navbar">
+            <a class="header__navbar-logo" href="../index.html"><img src="../resources/images/logo-cervezablomsterne.png" alt="Logo"></a>
+            <ul class="header__navbar-menu">
+                <li><a href="about-us.html">Acerca de nosotros</a></li>
+                <li><a href="variety.html" id="variety">Variedades</a>
+                    <ul class="variety-menu">
+                        <li><a href="">Porter lager</a></li>
+                        <li><a href="">Irish Red</a></li>
+                        <li><a href="">Red Ipa</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="shop.html"><i class='bx bxs-beer' ></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="beer__container">
+            <article class="beer__detail-container">
+                <div class="beer__detail-circle"></div>
+                <div class="beer__detail-data">
+                    <img src="../resources/icons/icon-hope.svg" alt="hope"><p> Cascade</p>
+                    <img src="../resources/icons/icon-weat.svg" alt="weat"><p> Pilsen</p>
+                    <p>Levadura: lager</p>
+                    <p>IBU 20</p>
+                    <p>Alcohol 5,3%</p>
+                </div>
+                <img class="beer__detail-img" src="../resources/images/beer-baltic-porter.png" alt="Baltic Porter">
+            </article>
+            <article class="beer__description-container">
+                <h1>Baltic Porter Lager</h1>
+                
+                <p>Una cerveza color oscuro de cuerpo pleno, suave y sabrosa, reminiscente al chocolate y café.
+                    Presenta un carácter limpio gracias a su fermentación de tipo lager.</p>
+                <form action="#" method="get">
+                    <label for="volume">Medida ml</label>
+                    <input type="range" id="volume" list="volume">
+                    <datalist id="volume">
+                        <option value="300">
+                        <option value="473">
+                        <option value="750">
+                        <option value="1000">
+                    </datalist>
+                    <input type="number" name="quantity" id="" min="1" max="100" required>
+                    <button type="submit">Añadir al carrito</button>
+                </form>
+            </article>
+        </section>
+        <section class="anotherBeers">
+            <div>
+                <div class="circle"></div>
+                <img src="../resources/images/beer-session-ipa.png" alt="Session Ipa">
+            </div>
+            <div>
+                <div class="circle"></div>
+                <img src="../resources/images/beer-irish-red.png" alt="Irish red">
+            </div>
+            <div>
+                <div class="circle"></div>
+                <img src="../resources/images/beer-red-ipa.png" alt="Red Ipa">
+            </div>
+        </section>
+        <aside>
+            <div>
+                <h2>Porter</h2>
+            </div>
+        </aside>
+    </main>
+    <footer id="footer__container">
+        <section class="footer__logo">
+            <a href="../index.html"><img src="../resources/images/logo-cervezablomsterne.png" alt="Logo"></a>
+        </section>
+        <section class="footer__menu">
+            <ul>
+                <li><a href="about-us.html">Acerca de nosotros</a></li>
+                <li><a href="variety.html">Variedades</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="https://goo.gl/maps/3ChtQo4Y5G64iusZA" target="_blank"><i class='bx bx-current-location'></i> Av. Libertador 1234, CABA</a></li>
+            </ul>
+        </section>
+        <section class="footer__social">
+            <div class="footer__social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+            </div>
+            <form action="#" method="get">
+                <input type="email" name="mail" placeholder="juanperez@gmail.com">
+                <button type="submit">Subscribirse</button>
+            </form>
+        </section>
+    </footer>
+</body>
+</html>
