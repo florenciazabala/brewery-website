@@ -45,6 +45,11 @@
                 
                 <p>Una cerveza color oscuro de cuerpo pleno, suave y sabrosa, reminiscente al chocolate y café.
                     Presenta un carácter limpio gracias a su fermentación de tipo lager.</p>
+                <div class="beer__description__size">
+                    <img src="../resources/icons/beer-cask.svg" alt="cask">
+                    <img src="../resources/icons/bottle.svg" alt="bottle">
+                    <img src="../resources/icons/cane.svg" alt="can">
+                </div>
                 <form action="#" method="get">
                     <label for="volume">Medida ml</label>
                     <input type="range" id="volume" list="volume">
@@ -55,7 +60,7 @@
                         <option value="1000">
                     </datalist>
                     <input type="number" name="quantity" id="" min="1" max="100" required>
-                    <button type="submit">Añadir al carrito</button>
+                    <a type="submit"><i class='bx bx-cart bx-sm'></i></a>
                 </form>
             </article>
         </section>
@@ -73,7 +78,7 @@
                 <img src="../resources/images/beer-red-ipa.png" alt="Red Ipa">
             </div>
         </section>
-        <aside>
+        <aside class="aside__variety">
             <div>
                 <h2>Porter</h2>
             </div>
@@ -93,13 +98,13 @@
         </section>
         <section class="footer__social">
             <div class="footer__social-icons">
-                <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
-                <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle bx-sm' ></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt bx-sm'></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter bx-sm' ></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank"><i class='bx bxl-whatsapp bx-sm'></i></a>
             </div>
-            <form action="#" method="get">
-                <input type="email" name="mail" placeholder="juanperez@gmail.com">
+            <form action="#" method="get" id="form__subscribe">
+                <input type="email" name="mail" id="email" placeholder="juanperez@gmail.com">
                 <button type="submit">Subscribirse</button>
             </form>
         </section>

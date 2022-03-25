@@ -92,10 +92,29 @@ footer#footer__container .footer__social .footer__social-icons{
     display: flex;
     justify-content: space-between;
 }
-footer#footer__container .footer__social .footer__social-icons a i{
-    height: 60px;
-    width: auto;
+
+form#form__subscribe{
+    margin-top: 20px;
 }
+
+form#form__subscribe input#email{
+    outline: none;
+    border:none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+form#form__subscribe button[type="submit"]{
+    border: none;
+    outline:none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+
+
 
 /*PRODUCT DETAIL*/
 .beer__container{
@@ -189,7 +208,17 @@ article.beer__detail-container div.beer__detail-data{
 }
 .beer__description-container p{
     font-size: 1rem;
+    font-weight: 100;
     margin-bottom: 10px;
+}
+
+div.beer__description__size img{
+    height: 30px;
+    width: auto;
+}
+
+aside.aside__variety div h2{
+    font-size: 3rem;
 }
 
 section.anotherBeers{
