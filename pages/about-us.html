@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brewery | Acerca de nosotros</title>
-    <link rel="shortcut icon" href="resources/favicon/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../resources/favicon/blomsterne-favicon.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../stylesheets/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html"><img src="resources/images/exampleLogotype.png" alt="Logo"></a>
-            <ul>
+        <nav class="header__navbar">
+            <a class="header__navbar-logo" href="../index.html"><img src="../resources/images/logo-cervezablomsterne.png" alt="Logo"></a>
+            <ul class="header__navbar-menu">
                 <li><a href="about-us.html">Acerca de nosotros</a></li>
-                <li><a href="variety.html">Variedades</a></li>
+                <li><a href="variety.html" id="variety">Variedades</a>
+                    <ul class="variety-menu">
+                        <li><a href="">Porter lager</a></li>
+                        <li><a href="">Irish Red</a></li>
+                        <li><a href="">Red Ipa</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contacto</a></li>
                 <li><a href="shop.html"><i class='bx bxs-beer' ></i></a></li>
             </ul>
@@ -22,20 +29,20 @@
     </header>
     <main>
         <section>
-            <article>
-                <img src="resources/images/user1.jpg" alt="team">
+            <article class="team__container">
+                <div id="team1-img" class="team__container-img"></div>
                 <h3>NOMBRE APELLIDO</h3>
                 <h4>Rol en el equipo</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, numquam modi. Adipisci totam saepe enim quibusdam velit architecto. Adipisci hic laudantium omnis assumenda error beatae magnam animi cupiditate totam debitis?</p>
             </article>
-            <article>
-                <img src="resources/images/user2.png" alt="team">
+            <article class="team__container">
+                <div id="team2-img" class="team__container-img" ></div>
                 <h3>NOMBRE APELLIDO</h3>
                 <h4>Rol en el equipo</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, numquam modi. Adipisci totam saepe enim quibusdam velit architecto. Adipisci hic laudantium omnis assumenda error beatae magnam animi cupiditate totam debitis?</p>
             </article>
-            <article>
-                <img src="resources/images/user3.png" alt="team">
+            <article class="team__container">
+                <div id="team3-img" class="team__container-img"></div>
                 <h3>NOMBRE APELLIDO</h3>
                 <h4>Rol en el equipo</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, numquam modi. Adipisci totam saepe enim quibusdam velit architecto. Adipisci hic laudantium omnis assumenda error beatae magnam animi cupiditate totam debitis?</p>
@@ -46,11 +53,11 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem nulla perspiciatis. At perspiciatis vero debitis nam cupiditate laboriosam, aliquid delectus aperiam possimus quaerat quae aliquam repellendus a officiis beatae labore, earum odit facilis! Id ullam iste, maiores obcaecati fuga molestias. Optio repudiandae cupiditate molestias, itaque incidunt animi consectetur tenetur iusto repellendus fuga molestiae temporibus delectus pariatur obcaecati, rerum sapiente, doloribus voluptatum. Aliquid, eaque saepe harum assumenda odio, a nulla aliquam, vitae autem cum rem vel perspiciatis voluptate beatae necessitatibus ipsam! Animi asperiores doloribus quibusdam dolores expedita eius, exercitationem facere eligendi ratione, pariatur cumque. Nesciunt iure praesentium fugiat atque dolores dicta asperiores esse nostrum repudiandae corrupti, ratione hic minus voluptate. Totam velit sapiente, cupiditate quis provident molestias iste tempora sint mollitia quod libero aperiam, corporis esse similique quam enim, natus voluptate consequuntur. Odit, facere eligendi excepturi mollitia nemo saepe pariatur numquam impedit perferendis nobis, corrupti quia ducimus harum veritatis? Atque, iusto corporis eius explicabo iure animi. Odit deserunt incidunt itaque impedit iure rem, quos reiciendis corrupti officia? Vel saepe obcaecati, vitae dolor, fuga officia voluptates ab explicabo ex animi autem labore, nesciunt adipisci reiciendis recusandae quasi ipsum magnam! Ea ducimus sapiente consequatur enim similique odio cupiditate, tempora voluptates nobis porro!</p>
         </section>
     </main>
-    <footer>
-        <section>
-            <a href="index.html"><img src="resources/images/exampleLogotype.png" alt="Logo"></a>
+    <footer id="footer__container">
+        <section class="footer__logo">
+            <a href="../index.html"><img src="../resources/images/logo-cervezablomsterne.png" alt="Logo"></a>
         </section>
-        <section>
+        <section class="footer__menu">
             <ul>
                 <li><a href="about-us.html">Acerca de nosotros</a></li>
                 <li><a href="variety.html">Variedades</a></li>
@@ -58,13 +65,15 @@
                 <li><a href="https://goo.gl/maps/3ChtQo4Y5G64iusZA" target="_blank"><i class='bx bx-current-location'></i> Av. Libertador 1234, CABA</a></li>
             </ul>
         </section>
-        <section>
-            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank"><i class='bx bxl-whatsapp' ></i>Whatsapp</a>
-            <form action="#" method="get">
-                <input type="email" name="mail" placeholder="juanperez@gmail.com">
+        <section class="footer__social">
+            <div class="footer__social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle bx-sm' ></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt bx-sm'></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter bx-sm' ></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank"><i class='bx bxl-whatsapp bx-sm'></i></a>
+            </div>
+            <form action="#" method="get" id="form__subscribe">
+                <input type="email" name="mail" id="email" placeholder="juanperez@gmail.com">
                 <button type="submit">Subscribirse</button>
             </form>
         </section>

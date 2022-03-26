@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 :root{
-    --background-gray: #2F2F2F;
     --background-darkgray: #202020;
+    --background-gray: #2F2F2F;
+    --secondary-gray:#454141;
+    --secondary-grayblue: #464848;
+    --secondary-lightgray: #A19F9F;
+
+    --accent-blue: #479DA6;
+    --accent-light-blue: #34CADA;
+    --accent-orange: #DA8D34;
+    /*Product detail*/
     --blue-gradient: #c271f3;
     --blue-gradient-img: linear-gradient(160deg, #c271f3 0%, #34cada 100%);
     --violet-gradient: #b65cb6;
@@ -102,7 +110,7 @@ form#form__subscribe input#email{
     border:none;
     padding: 10px;
     border-radius: 10px;
-    background-color: gray;
+    background-color: var(--secondary-gray);
 }
 
 form#form__subscribe button[type="submit"]{
@@ -110,7 +118,7 @@ form#form__subscribe button[type="submit"]{
     outline:none;
     padding: 10px;
     border-radius: 10px;
-    background-color: blue;
+    background-color: var(--accent-blue);
     color: white;
 }
 
@@ -217,6 +225,14 @@ div.beer__description__size img{
     width: auto;
 }
 
+form.form__cart input[type="number"]{
+    outline: none;
+    border:none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--secondary-gray);
+}
+
 aside.aside__variety div h2{
     font-size: 3rem;
 }
@@ -288,5 +304,217 @@ section.anotherBeers div:nth-child(2) div.circle{
 section.anotherBeers div:nth-child(3) div.circle{
     background-color: var(--fucsia-gradient);
     background-image: var(--fucsia-gradient-img);
+}
+
+/*SHOPPING CART*/
+article.article__product-detail{
+    background-color: var(--secondary-gray);
+    border-radius: 10px;
+    height: 300px; /**/
+    align-content: center;
+    margin: 10px;
+}
+
+article.article__product-detail img.product-detail__img{
+    height: 120px;
+}
+
+article.article__product-detail h4.product-detail__name{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+article.article__product-detail .product-detail__price{
+    font-size: 1rem;
+    color: var(--accent-light-blue);
+}
+
+article.article__product-detail input[type="number"].product-detail__quantity{
+    outline: none;
+    border:none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--secondary-lightgray);
+}
+
+/* Aside Summary cart*/
+aside.cart__container{
+    background-color: var(--secondary-grayblue);
+    border-radius: 4px;
+    width: 50%;
+    height: auto;
+}
+
+input[type="text"].cart__discountCoupon, input[type="number"]#calculateShipping {
+    outline: none;
+    border:none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--secondary-lightgray);
+}
+
+button.submit-discountCoupon, button.submit-calculateShipping{
+    border: none;
+    outline:none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--secondary-lightgray);
+    color: white;
+    margin-left: 5px;
+}
+
+img.cart__paymentMethod-img{
+    height: 20px;
+    width: auto;
+}
+
+.summary-cart-subtitle{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+button.cart-summary__submitButton{
+    border: none;
+    outline:none;
+    width: 100%;
+    height: 20px;
+    padding: 5px 10px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--accent-blue);
+    color: white;
+}
+table.table_summary{
+    font-size: 0.8rem;
+}
+table.table_summary tr td{
+   width: 100px;
+}
+
+table.table_summary tr.table_summary-total{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+table.table_summary tr.table_summary-total td.total-price{
+    color: var(--accent-light-blue);
+}
+
+/*CONTACT*/
+
+.contact__container{
+    margin: 20px;
+    width: 50%;
+    height: auto;
+}
+
+.mediumContacts{
+    margin: 20px;
+}
+
+button.contact__buttonSubmit{
+    border: none;
+    outline:none;
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--accent-blue);
+    color: white;
+}
+
+form.contact input.contact__input, textarea.contact__input{
+    outline: none;
+    border:none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--secondary-gray);
+}
+
+form.contact input.contact__input::placeholder{
+    color: white;
+}
+
+iframe.map{
+    filter: invert(80%)
+}
+
+.mediumContact{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/*INDEX*/
+#video{
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+header .header__container{
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+h1#header__slogan{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+}
+.section-team__container{
+    margin: 20px;
+}
+article.team__container div#team1-img{
+    background-image: url("../resources/images/team1.jpg");
+}
+article.team__container div#team2-img{
+    background-image: url("../resources/images/team2.jpg");
+}
+article.team__container div#team3-img{
+    background-image: url("../resources/images/team3.jpg");
+}
+article.team__container div.team__container-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+button.buttonTeamInfo{
+    border: none;
+    outline:none;
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--accent-blue);
+    color: white;
+    margin-top: 20px;
+}
+
+article.variety__container{
+    margin: 20px;
+}
+
+article.variety__container img{
+    height: 300px;
+    width: auto;
+}
+.companyDescription__container{
+    margin: auto 20px;
+    text-align: center;
+}
+.subtitle{
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 10px;
+}
+.textCompanyDescription{
+    font-size: 1rem;
+    font-weight: 2;
 }
 

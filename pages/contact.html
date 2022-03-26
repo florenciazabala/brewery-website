@@ -5,44 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brewery | Contacto</title>
-    <a href="index.html"><link rel="shortcut icon" href="resources/favicon/favicon.png" type="image/x-icon"></a>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="shortcut icon" href="../resources/favicon/blomsterne-favicon.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../stylesheets/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html"><img src="resources/images/exampleLogotype.png" alt="Logo"></a>
-            <ul>
+        <nav class="header__navbar">
+            <a class="header__navbar-logo" href="../index.html"><img src="../resources/images/logo-cervezablomsterne.png" alt="Logo"></a>
+            <ul class="header__navbar-menu">
                 <li><a href="about-us.html">Acerca de nosotros</a></li>
-                <li><a href="variety.html">Variedades</a></li>
+                <li><a href="variety.html" id="variety">Variedades</a>
+                    <ul class="variety-menu">
+                        <li><a href="">Porter lager</a></li>
+                        <li><a href="">Irish Red</a></li>
+                        <li><a href="">Red Ipa</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contacto</a></li>
                 <li><a href="shop.html"><i class='bx bxs-beer' ></i></a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank"><i class='bx bxl-whatsapp' ></i>Whatsapp</a>
-            <h5><i class='bx bx-current-location'></i> 126 Lamadrid 2486, Villa Ballester, Provincia de Buenos Aires</h5>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9295.060811126423!2d-58.55756336379962!3d-34.5459521451748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba00f413f107%3A0x923cac407f719eb!2sWantaco%20Ballester!5e0!3m2!1ses-419!2sar!4v1647313689275!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <main class="">
+        <section class="mediumContacts">
+            <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank" class="mediumContact"><i class='bx bxl-whatsapp bx-xs'></i> +54 11873455</a>
+            <a href="#" target="_blank" class="mediumContact"><i class='bx bxs-phone bx-xs'></i> 02244449608</a>
+            <h6 class="mediumContact"><i class='bx bxs-location-plus bx-xs'></i> Alsina 432, Las Flores, Provincia de Buenos Aires</h6>
+            <h6 class="mediumContact">Horarios de atención: Lunes a Viernes de 9:00 hs. a 18:00 hs.</h6>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.3639904109377!2d-59.10194728509804!3d-36.01140394083587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cb2a12de2c0b%3A0x2dca3f94f287745f!2sAlsina%20432%2C%20Las%20Flores%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1648263388447!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section>
-            <form action="#" method="post">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" required>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" required>
-                <label for="mail">Email</label>
-                <input type="email" name="mail" id="mail" placeholder="juanperez@gmail.com" required>
-                <label for="phone">Teléfono</label>
-                <input type="tel" name="phone" id="phone" placeholder="011 6823421">
-                <label for="isAdult">Soy mayor de edad</label>
-                <input type="checkbox" name="adult" value="isAdult" id="isAdult" checked required>
+        
+        <section class="contact__container">
+            <form action="#" method="post" class="contact">
+                <!--<label for="name">Nombre y apellido</label>-->
+                <input class="contact__input" type="text" name="name" id="name" placeholder="Nombre y apellido" required>
+                <!--<label for="mail">Email</label>-->
+                <input class="contact__input" type="email" name="mail" id="mail" placeholder="Email" required>
+                <!--<label for="phone">Teléfono</label>-->
+                <input class="contact__input" type="tel" name="phone" id="phone" placeholder="Teléfono">
                 <label for="reason">Motivo</label>
-                <input type="text" name="reason" list="reasonsList" id="reason" required>
+                <input class="contact__input" type="text" name="reason" list="reasonsList" id="reason" required>
                     <datalist id="reasonsList">
                         <option>Franquicias</option>
                         <option>Ventas</option>
@@ -50,16 +54,19 @@
                         <option>Reclamos</option>
                     </datalist>
                 <label for="comentarios">Comentarios</label>
-                <textarea name="comentarios" id="" cols="30" rows="10" required></textarea>
-                <button type="submit">Enviar</button>
+                <textarea class="contact__input" name="comentarios" id="" cols="30" rows="10" required></textarea>
+                <input type="checkbox" name="adult" value="isAdult" id="isAdult" checked required>
+                <label for="isAdult">Soy mayor de edad</label>
+                <button type="submit" class="contact__buttonSubmit">Enviar</button>
             </form>
         </section>
     </main>
-    <footer>
-        <section>
-            <a href="index.html"><img src="resources/images/exampleLogotype.png" alt="Logo"></a>
+
+    <footer id="footer__container">
+        <section class="footer__logo">
+            <a href="../index.html"><img src="../resources/images/logo-cervezablomsterne.png" alt="Logo"></a>
         </section>
-        <section>
+        <section class="footer__menu">
             <ul>
                 <li><a href="about-us.html">Acerca de nosotros</a></li>
                 <li><a href="variety.html">Variedades</a></li>
@@ -67,16 +74,19 @@
                 <li><a href="https://goo.gl/maps/3ChtQo4Y5G64iusZA" target="_blank"><i class='bx bx-current-location'></i> Av. Libertador 1234, CABA</a></li>
             </ul>
         </section>
-        <section>
-            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank"><i class='bx bxl-whatsapp' ></i>Whatsapp</a>
-            <form action="#" method="get">
-                <input type="email" name="mail" placeholder="juanperez@gmail.com">
+        <section class="footer__social">
+            <div class="footer__social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle bx-sm' ></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram-alt bx-sm'></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter bx-sm' ></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541168148261&text=Buenas+tardes%21+Tengo+una+cosulta" target="_blank"><i class='bx bxl-whatsapp bx-sm'></i></a>
+            </div>
+            <form action="#" method="get" id="form__subscribe">
+                <input type="email" name="mail" id="email" placeholder="juanperez@gmail.com">
                 <button type="submit">Subscribirse</button>
             </form>
         </section>
     </footer>
+
 </body>
 </html>
